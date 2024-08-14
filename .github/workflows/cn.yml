@@ -8,10 +8,10 @@ on:
         required: true
 
 jobs:
-  PolyxOS_ing:
+  PolyxUI_Status:
     runs-on: ubuntu-latest
     steps:
-      - name: Clean Junks
+      - name: Clean All Junk,App
         run: |
           docker rmi `docker images -q` || true
           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/sudo apt/sources.list.d || true
@@ -55,12 +55,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           
-      - name: ch mod
+      - name: chmod branch
         run: |
-          cd polyx_autobuild
+          cd polyxui_branch
           sudo chmod 777 -R *
 
-      - name: Cooking
+      - name: Making ROM...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
