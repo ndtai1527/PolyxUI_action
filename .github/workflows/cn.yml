@@ -57,13 +57,13 @@ jobs:
           
       - name: chmod branch
         run: |
-          cd polyxui_branch
+          cd polyxui
           sudo chmod 777 -R *
 
       - name: Making ROM...
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd polyxui_branch
+          cd polyxui
           ./polyxCN.sh "$INPUT_URL"
       
