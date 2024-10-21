@@ -65,5 +65,5 @@ jobs:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
           cd polyxui
-          ./polyxCN.sh "$INPUT_URL"
+          sudo bash polyxCN.sh "$INPUT_URL"
       
