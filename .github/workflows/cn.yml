@@ -57,7 +57,7 @@ jobs:
           
       - name: chmod branch
         run: |
-          cd polyxui
+          cd Tiramisu-Cake
           sudo chmod 777 -R *
 
       - name: Making ROM...
