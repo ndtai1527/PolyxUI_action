@@ -35,7 +35,7 @@ jobs:
       - name: Checkout WORKSPACE
         run: |
           
-          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/ndtai1527/Tiramisu-Cake.git
+          git clone https://${{ secrets.PRIVATEP_TOKEN }}github.com/ndtai1527/maianh_hybird_tool.git
 
       - name: Set up Time
         run: |
@@ -63,6 +63,6 @@ jobs:
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd Tiramisu-Cake
-          sudo bash polyxCN.sh "$INPUT_URL"
+          cd maianh_hybird_tool
+          sudo bash caramelCN.sh "$INPUT_URL"
       
