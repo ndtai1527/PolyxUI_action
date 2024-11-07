@@ -56,7 +56,7 @@ jobs:
           
       - name: chmod branch
         run: |
-          cd Tiramisu-Cake
+          cd maianh_hybird_tool
           sudo chmod 777 -R *
 
       - name: Making ROM...
