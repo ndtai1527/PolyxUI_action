@@ -35,7 +35,7 @@ jobs:
       - name: Checkout WORKSPACE
         run: |
           
-          git clone https://${{ secrets.PRIVATEP_TOKEN }}github.com/ndtai1527/maianh_hybird_tool.git
+          git clone https://${{ secrets.PRIVATEP_TOKEN }}@github.com/ndtai1527/maianh_hybird_tool.git
 
       - name: Set up Time
         run: |
